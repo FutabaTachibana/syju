@@ -98,7 +98,10 @@ import { Icon } from '../user'
         // document.dispatchEvent(toggleDarkModeEvent)
         const newTheme = setTheme(undefined, true)
         darkModeBtn.dataset.theme = newTheme
-        showToast({ message: `Set theme to ${newTheme}` })
+        let themeText = '跟随系统'
+        if (newTheme === 'light') themeText = '浅色模式'
+        else if (newTheme === 'dark') themeText = '深色模式'
+        showToast({ message: `设为 ${themeText}` })
       })
 
       // Menu

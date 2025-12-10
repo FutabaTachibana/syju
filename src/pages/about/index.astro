@@ -13,37 +13,34 @@ const headings = [
 ---
 
 <PageLayout title='关于' {headings} comment>
-  <p>Student / Developer</p>
   <p>
-    以后再写吧。
+    Student / Developer
   </p>
   <p>
-    <Spoiler>我很懒（）</Spoiler>
+    双葉橘 / <b>橘橘</b> / Futaba_Tachibana / <b>f14a</b> / Dblv_Tangerines
+  </p>
+  <p>
+    Minecraft 玩家 / 后端开发 / 喜欢折腾软件
+  </p>
+  <p>
+    <Spoiler>后面忘了。</Spoiler>
   </p>
   <Button title='查看我的项目' class='w-fit' href='/projects#sponsorship' variant='ahead' />
 
   {/* general-talk */}
   <h2 id='hobbies'>爱好</h2>
   <ul>
-    <li>以后再写吧。</li>
-    
+    <li>Minecraft</li>
+    <li>模拟经营游戏</li>
+    <li>编程</li>
+    <li><Spoiler>在 QQ 水群</Spoiler></li>
+    <li><Spoiler>把事情拖到 DDL</Spoiler></li>
+    <li><Spoiler>忘记东西</Spoiler></li>
   </ul>
 
   {/* tools */}
   <h2 id='tools'>工具</h2>
   <p>我所使用的工具：</p>
-  <ToolSection
-    class='mb-5'
-    title='设计'
-    tools={[
-      {
-        name: 'Photoshop',
-        description: 'Picture Editing',
-        href: 'https://www.adobe.com/products/photoshop',
-        icon: import('@/assets/tools/photoshop.svg?raw')
-      }
-    ]}
-  />
   <ToolSection
     class='mb-5'
     title='生产力'
@@ -77,36 +74,60 @@ const headings = [
         description: 'IDE',
         href: 'https://www.jetbrains.com/idea/',
         icon: import('@/assets/tools/intellij.svg?raw')
+      },
+      {
+        name: 'Git',
+        description: 'Version Control',
+        href: 'https://git-scm.com/',
+        icon: import('@/assets/tools/git.svg?raw')
+      },
+      {
+        name: 'GitHub',
+        description: 'Code Hosting',
+        href: 'https://github.com/',
+        icon: import('@/assets/tools/github.svg?raw')
       }
     ]}
   />
   <ToolSection
     class='mb-5'
-    title='Environment'
+    title='环境'
     tools={[
       {
         name: 'Debian GNU/Linux',
-        description: 'Linux Distribution',
+        description: 'Remoute Server OS',
         href: 'https://www.debian.org/',
         icon: import('@/assets/tools/debian.svg?raw')
       },
       {
         name: 'Ubuntu 24.04 LTS',
-        description: 'Linux Distribution',
+        description: 'WSL',
         href: 'https://ubuntu.com/',
         icon: import('@/assets/tools/ubuntu.svg?raw')
       },
       {
         name: 'MacOS Sequioa',
-        description: 'MacBook Air',
+        description: 'Apple Mac mini',
         href: 'https://www.apple.com/macos/',
         icon: import('@/assets/tools/apple.svg?raw')
       },
       {
         name: 'Windows 11',
-        description: 'Framework Laptop 16',
+        description: 'ASUS TUF Gaming F15',
         href: 'https://news.microsoft.com/windows11-general-availability/',
         icon: import('@/assets/tools/windows11.svg?raw')
+      }
+    ]}
+  />
+  <ToolSection
+    class='mb-5'
+    title='设计'
+    tools={[
+      {
+        name: 'Photoshop',
+        description: 'Picture Editing',
+        href: 'https://www.adobe.com/products/photoshop',
+        icon: import('@/assets/tools/photoshop.svg?raw')
       }
     ]}
   />
